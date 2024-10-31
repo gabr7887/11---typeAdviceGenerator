@@ -1,0 +1,77 @@
+:root{
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+}
+
+body, p, button, img, span{
+  margin: 0;
+  padding: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--DarkBlue);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section{
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--GrayishBlue);
+  max-width: 400px;
+  margin: 0 10px;
+  border-radius: 8px;
+  position: relative;
+  padding: 32px 32px 48px 32px;
+  text-align: center;
+}
+
+p{
+  font-size: 28px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  color: white;
+}
+
+span{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  color: var(--NeonGreen);
+}
+
+button{
+  bottom: -27px;
+  position: absolute;
+  display: flex;
+  border: none;
+  padding: 16px;
+  border-radius: 50%;
+  background-color: var(--NeonGreen);
+  cursor: pointer;
+}
+
+button:hover{
+  box-shadow: 0px 0px 6px 14px hsla(150, 100%, 66%, 20%);
+}
+
+button:disabled{
+  opacity: 0.6;
+  cursor:progress;
+}
+
+#divider{
+  max-width: 100%;
+}
